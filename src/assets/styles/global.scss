@@ -1,0 +1,42 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.ms-header{
+    text-align: center;
+    color: rgb(207, 23, 78);
+}
+
+.nr-body {
+    /* margin: 0 0 50px; /* bas = hauteur du pied de page */
+    color: #5A5A5A;
+}
+
+.nr-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nr-footer img {
+    max-width: 100%;
+    height: 46px;
+}
