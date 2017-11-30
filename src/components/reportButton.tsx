@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as OfficeHelpers from '@microsoft/office-js-helpers';
 import { Button, ButtonType } from 'office-ui-fabric-react';
 
-export class Report extends React.Component<ReportProps, any> {
+export class Report extends React.Component<any, any> {
     constructor(props, context) {
         super(props, context);
         this.createReport = this.createReport.bind(this);
