@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Button, ButtonType } from 'office-ui-fabric-react';
 import { Header } from './header';
 import { MainTxt } from './maintxt';
 import { SecondTxt } from './secondtxt';
-import { Couleur } from './actionbutton';
+import { Couleur } from './colorbutton';
 import { Footer } from './footer';
 
 export interface AppProps {
@@ -18,12 +17,17 @@ export class App extends React.Component<AppProps, any> {
     render() {
         return (
             <div className='nr-body'>
-                <Header message='Training' />
+                <div className = 'n-header'>
+                    <Header message='Training' />
+                </div>
                 <MainTxt message='Ce petit outil permet de réaliser des tests' /><br />
                 <SecondTxt message='Cliquer pour mettre la cellule en couleur' /><br />
-                <Couleur couleurCellule='Yellow' /><br /><br />
-                <Couleur couleurCellule='Red' /><br /><br />
-                <Footer logo='assets/logo_neoreeds_with_text_medium.png' title={this.props.title}  />
+                <div className = 'actions'>
+                    <Couleur couleurCellule='Yellow' /> <Couleur couleurCellule='Red' />
+                </div>
+                <div className='n-footer'>
+                    <Footer logo='assets/logo_neoreeds_with_text_medium.png' title={this.props.title}  />
+                </div>
             </div>
         );
     };

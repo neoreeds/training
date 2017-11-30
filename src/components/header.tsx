@@ -11,7 +11,7 @@ export class Header extends React.Component<HeaderProps, any> {
 
     render() {
         return (
-            <section className='ms-header ms-bgColor-neutralLighter ms-u-fadeIn500'>
+            <section className='ms-header ms-bgColor-neutralLighter'>
                 <h1 className='ms-fontColor-neutralPrimary'>{this.props.message}</h1>
             </section>
         );
