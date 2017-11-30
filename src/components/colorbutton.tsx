@@ -27,7 +27,7 @@ export class Couleur extends React.Component<CouleurProps, any> {
             await context.sync()
 
             console.log(`The range address was "${range.address}".`);
-            OfficeHelpers.UI.notify("Color is " + this.props.couleurCellule + ".");
+            //OfficeHelpers.UI.notify("Color is " + this.props.couleurCellule + ".");
             //OfficeHelpers.UI.notify(`The range address was "${range.address}".`);
         });
     }
