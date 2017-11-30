@@ -5,7 +5,6 @@ import { MainTxt } from './maintxt';
 import { SecondTxt } from './secondtxt';
 import { Couleur } from './actionbutton';
 import { Footer } from './footer';
-import * as OfficeHelpers from '@microsoft/office-js-helpers';
 
 export interface AppProps {
     title: string;
